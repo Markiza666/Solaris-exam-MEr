@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Secular+One&display=swap');
+
+*,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font: normal 3.75rem Secular one;
+    color: white;
+    letter-spacing: .25rem;
+}
+
+h4 {
+    padding: .5rem 0;
+    font: normal 1.5rem Lora;
+    color: rgba(255, 208, 41, 1);
+    letter-spacing: .75rem;
+}
+
+body {
+    width: 100%;
+    background-image: url(asset/universum.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    .sun {
+        position: absolute;
+        min-height: 90vh;
+    }
+    header {
+        //background-color: chartreuse;
+        margin: 4.5rem 4.25rem 0px auto;
+        width: 625px;
+    }
+    .planets {
+        //background-color: rgba(240, 248, 255, 0.096);
+        width: 1200px;
+        height: 60vh;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .merkury {
+            width: .5rem;
+        }
+        .venus {
+            width: .8rem;
+        }
+        .earth {
+            width: 1.5rem;
+
+        }
+        .mars {
+            width: .6rem;
+        }
+        .jupiter {
+            width: 8rem;
+        }
+        .saturn {
+            width: 17rem;
+
+        }
+        .uran {
+            width: 3rem;
+
+        }
+        .neptun {
+            width: 4.5rem;
+            padding-left: 2rem;
+        }
+    }
+    .modal {
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(1, 1, 1, 0.9);
+        display: block;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .modal-content {
+            width: 640px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            #close {
+                color: #fff;
+                float: right;
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+            h6 {
+                padding-top: 1rem;
+                font: normal 18px Secular One;
+                color: white;
+            }
+            p {
+                padding: .5rem 0 1rem 0;
+                font: normal 18px Roboto Condensed;
+                color: white;
+            }
+            hr {
+                margin: 1rem 0;
+            }
+            .planetary-data {
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, );
+                grid-template-areas: "a b" "c d";
+                .data-1 {
+                    grid-area: a;
+                }
+                .data-2 {
+                    grid-area: b;
+                }
+                .data-3 {
+                    grid-area: c;
+                }
+                .data-4 {
+                    grid-area: d;
+                }
+            }
+        }
+    }
+}

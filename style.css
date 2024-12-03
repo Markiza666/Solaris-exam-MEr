@@ -11,7 +11,6 @@ h1 {
 }
 
 h4 {
-  padding: 0.5rem 0;
   font: normal 1.5rem Lora;
   color: rgb(255, 208, 41);
   letter-spacing: 0.75rem;
@@ -20,69 +19,141 @@ h4 {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url(asset/universum.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgb(12, 22, 77), rgb(25, 11, 34));
   position: relative;
 }
 body .sun {
+  visibility: visible;
   position: absolute;
-  min-height: 90vh;
+  top: 50%;
+  left: 0;
+  height: 100vh;
+  width: 100vh;
+  background-color: rgb(255, 208, 41);
+  border-radius: 50%;
+  transform: translate(-85%, -50%);
+  z-index: 4;
+  cursor: pointer;
+}
+body .sun2 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 110vh;
+  width: 110vh;
+  background-color: rgba(66, 142, 212, 0.5);
+  border-radius: 50%;
+  transform: translate(-81%, -50%);
+  z-index: 3;
+  cursor: pointer;
+}
+body .sun3 {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 120vh;
+  width: 120vh;
+  background-color: rgba(66, 142, 212, 0.2);
+  border-radius: 50%;
+  transform: translate(-79%, -50%);
+  z-index: 2;
   cursor: pointer;
 }
 body header {
-  margin: 4.5rem 4.25rem 0px auto;
+  visibility: visible;
+  position: absolute;
+  top: 5%;
+  right: 5%;
   width: 625px;
 }
 body header h1, body header h4 {
   text-align: end;
 }
 body .planets {
-  max-width: 80%;
-  height: 60vh;
-  margin: auto;
+  visibility: visible;
+  height: 100vh;
+  width: 90%;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: absolute;
+  right: 0;
 }
 body .planets .merkury {
-  width: 0.5rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(136, 136, 136);
   cursor: pointer;
 }
 body .planets .venus {
-  width: 0.8rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgb(231, 205, 205);
   cursor: pointer;
 }
 body .planets .earth {
-  width: 1.5rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgb(66, 142, 212);
   cursor: pointer;
 }
 body .planets .mars {
-  width: 0.6rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(239, 95, 95);
   cursor: pointer;
 }
 body .planets .jupiter {
-  width: 8rem;
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+  background-color: rgb(226, 148, 104);
   cursor: pointer;
 }
 body .planets .saturn {
-  width: 17rem;
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  background-color: rgb(199, 170, 114);
+  position: relative;
   cursor: pointer;
 }
+body .planets .saturn .saturn-rings {
+  width: 230px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  right: -30%;
+  transform: rotate(-30deg);
+}
 body .planets .uran {
-  width: 3rem;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: rgb(201, 212, 241);
   cursor: pointer;
 }
 body .planets .neptun {
-  width: 4.5rem;
-  padding-left: 2rem;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: rgb(122, 145, 167);
   cursor: pointer;
 }
 body .modal {
-  visibility: hidden;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(1, 1, 1, 0.9);
-  display: block;
+  background: url(asset/universum.jpg) rgba(12, 22, 77, 0.8);
+  background-size: cover;
+  background-blend-mode: lighten;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;

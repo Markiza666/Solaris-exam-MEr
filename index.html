@@ -12,76 +12,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <div id="sun"></div> -->
-    <img id="sun" class="sun" src="asset/sun.png" alt="#">
-    <header>
+    <div id="sun" class="sun"></div>
+    <div id="sun2" class="sun2"></div>
+    <div id="sun3" class="sun3"></div>
+    <!-- <img id="sun" class="sun" src="asset/sun.png" alt="#"> -->
+    <header id="header">
         <h1>SOLSYSTEMET</h1>
         <h4>SOLARIS</h4>
     </header>
     <main>
-        <section class="planets">
-            <!-- <div id="merkurius"></div>
-            <div id="venus"></div>
-            <div id="earth"></div>
-            <div id="mars"></div>
-            <div id="jupiter"></div>
-            <div id="saturn"></div>
-            <div id="uran"></div>
-            <div id="neptun"></div> -->
-                <img id="merkurius" class="merkury" src="asset/merkurius.png" alt="">
-            
-                <img id="venus" class="venus" src="asset/venus.png" alt="">
-                
-                <img id="earth" class="earth" src="asset/jorden.png" alt="">
-                
-                <img id="mars" class="mars" src="asset/mars.png" alt="">
-                
-                <img id="jupiter" class="jupiter" src="asset/jupiter.png" alt="">
-                
-                <img id="saturn" class="saturn" src="asset/saturnus.png" alt="">
-                
-                <img id="uran" class="uran" src="asset/uranus.png" alt="">
-                
-                <img id="neptun" class="neptun" src="asset/neptunus.png" alt="">
+        <section id="planets" class="planets">
+            <div id="merkurius" class="merkury"></div>
+            <div id="venus" class="venus"></div>
+            <div id="earth" class="earth"></div>
+            <div id="mars" class="mars"></div>
+            <div id="jupiter" class="jupiter"></div>
+            <div id="saturn" class="saturn">
+                <div class="saturn-rings"></div>
+            </div>
+            <div id="uran" class="uran"></div>
+            <div id="neptun" class="neptun"></div>
+            </div>
+        </section>
+        <section id="popup" class="modal">
+            <div class="modal-content">
+                <span id="close">&times;</span>
+                <h1 id="planet-name"></h1>
+                <h4 id="planet-latin-name"></h4>
+                <p id="description"></p>
 
-            <div id="popup" class="modal">
+                <hr>
 
-                <div class="modal-content">
-                    <span id="close">&times;</span>
-                    <h1 id="planet-name"></h1>
-                    <h4 id="planet-latin-name"></h4>
-                    <p id="description"></p>
-
-                    <hr>
-
-                    <div class="planetary-data">
-                        <div class="data-1">
-                            <h6>OMKRETS</h6>
-                            <p id="circumference"></p>
-                        </div>
-
-                        <div class="data-2">
-                            <h6>KM FRÅN SOLEN</h6>
-                            <p id="distance"></p>
-                        </div>
-
-                        <div class="data-3">
-                            <h6>MAX TEMPERATUR</h6>
-                            <p id="max-temp"></p>
-                        </div>
-
-                        <div class="data-4">
-                            <h6>MIN TEMPERATUR</h6>
-                            <p id="min-temp"></p>
-                        </div>
+                <div class="planetary-data">
+                    <div class="data-1">
+                        <h6>OMKRETS</h6>
+                        <p id="circumference"></p>
                     </div>
 
-                    <hr>
+                    <div class="data-2">
+                        <h6>KM FRÅN SOLEN</h6>
+                        <p id="distance"></p>
+                    </div>
 
-                    <h6>MÅNAR</h6>
-                    <p id="moons"></p>
+                    <div class="data-3">
+                        <h6>MAX TEMPERATUR</h6>
+                        <p id="max-temp"></p>
+                    </div>
+
+                    <div class="data-4">
+                        <h6>MIN TEMPERATUR</h6>
+                        <p id="min-temp"></p>
+                    </div>
                 </div>
-            </div>
+
+                <hr>
+
+                <h6>MÅNAR</h6>
+                <p id="moons"></p>
             </div>
         </section>
     </main>

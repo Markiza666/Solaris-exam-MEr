@@ -8,6 +8,8 @@ const jupiter = document.getElementById('jupiter');
 const saturn = document.getElementById('saturn');
 const uran = document.getElementById('uran');
 const neptun = document.getElementById('neptun');
+const header = document.getElementById('header');
+const planets = document.getElementById('planets');
 
 // Global konstant för att komma åt modal / popup /overlay som presenterar information om solsystemets delar
 const popup = document.getElementById('popup');
@@ -54,6 +56,9 @@ let saveInfoToLocal = (data) => {
 
 // Funktion för att öppna modal/popup och presentera informationen
 let presentInfo = (dataToPresent) => {
+    const sun2 = document.getElementById('sun2');
+    const sun3 = document.getElementById('sun3');
+
     const closeBtn = document.getElementById('close');
     const planetName = document.getElementById('planet-name');
     const planetLatinName = document.getElementById('planet-latin-name');
@@ -65,8 +70,22 @@ let presentInfo = (dataToPresent) => {
     const moons = document.getElementById('moons');
     let moonNames = '';
 
-    popup.style.visibility = 'visible';
-    closeBtn.addEventListener('click', function() {popup.style.visibility = 'hidden'});
+    popup.style.display = 'block';
+    header.style.visibility = 'hidden';
+    planets.style.visibility = 'hidden';
+    sun.style.backgroundColor = 'rgba(66, 142, 212, 1)';
+    sun2.style.display = 'block';
+    sun3.style.display = 'block';
+
+    closeBtn.addEventListener('click', 
+        function() {
+            popup.style.display = 'none';
+            header.style.visibility = 'visible';
+            planets.style.visibility = 'visible';
+            sun.style.backgroundColor = 'rgba(255, 208, 41, 1)';
+            sun2.style.display = 'none';
+            sun3.style.display = 'none';
+        });
 
     planetName.innerHTML = dataToPresent.name;
     planetLatinName.innerHTML = dataToPresent.latinName;

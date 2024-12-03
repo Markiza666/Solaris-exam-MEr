@@ -65,7 +65,7 @@ body header {
   visibility: visible;
   position: absolute;
   top: 5%;
-  right: 5%;
+  right: 4%;
   width: 625px;
 }
 body header h1, body header h4 {
@@ -131,9 +131,9 @@ body .planets .saturn .saturn-rings {
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   position: absolute;
-  bottom: 50%;
-  right: -30%;
-  transform: rotate(-30deg);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%) rotate(-30deg);
 }
 body .planets .uran {
   width: 66px;

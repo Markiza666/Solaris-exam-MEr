@@ -9,15 +9,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Secular+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img class="sun" src="asset/sun.png" alt="">
+    <!-- <div id="sun"></div> -->
+    <img id="sun" class="sun" src="asset/sun.png" alt="#">
     <header>
         <h1>SOLSYSTEMET</h1>
         <h4>SOLARIS</h4>
     </header>
     <main>
         <section class="planets">
+            <!-- <div id="merkurius"></div>
+            <div id="venus"></div>
+            <div id="earth"></div>
+            <div id="mars"></div>
+            <div id="jupiter"></div>
+            <div id="saturn"></div>
+            <div id="uran"></div>
+            <div id="neptun"></div> -->
                 <img id="merkurius" class="merkury" src="asset/merkurius.png" alt="">
             
                 <img id="venus" class="venus" src="asset/venus.png" alt="">
@@ -34,45 +44,44 @@
                 
                 <img id="neptun" class="neptun" src="asset/neptunus.png" alt="">
 
-                <div class="modal">
-                    
-                    <div class="modal-content">
-                        <span id="close">&times;</span>
-                        <h1>Merkurius</h1>
-                        <h4>Merkurius</h4>
-                        <p>Merkurius (symbol: ☿) är den innersta och minsta planeten i solsystemet, med en omloppstid runt solen på ungefär 88 dygn. På grund av sin närhet till solen är den svår att observera från jorden och kan bara ses i gryningen eller skymningen för blotta ögat eller med en fältkikare. Merkurius har ändå en observationshistoria på åtminstone 3 400 år, eftersom den finns dokumenterad i MUL.APIN, det babyloniska verk som behandlar babylonisk astronomi och astrologi.</p>
+            <div id="popup" class="modal">
 
-                        <hr>
+                <div class="modal-content">
+                    <span id="close">&times;</span>
+                    <h1 id="planet-name"></h1>
+                    <h4 id="planet-latin-name"></h4>
+                    <p id="description"></p>
 
-                        <div class="planetary-data">
-                            <div class="data-1">
-                                <h6>Circumference</h6>
-                                <p>4 879 km</p>
-                            </div>
+                    <hr>
 
-                            <div class="data-2">
-                                <h6>distance</h6>
-                                <p>4 879 km</p>
-                            </div>
-
-                            <div class="data-3">
-                                <h6>circumferenCCe</h6>
-                                <p>4 879 km</p>
-                            </div>
-
-                            <div class="data-4">
-                                <h6>circumference</h6>
-                                <p>4 879 km</p>
-                            </div>
+                    <div class="planetary-data">
+                        <div class="data-1">
+                            <h6>OMKRETS</h6>
+                            <p id="circumference"></p>
                         </div>
 
-                        <hr>
+                        <div class="data-2">
+                            <h6>KM FRÅN SOLEN</h6>
+                            <p id="distance"></p>
+                        </div>
 
-                        <h6>Månar</h6>
-                        <p>Inga</p>
+                        <div class="data-3">
+                            <h6>MAX TEMPERATUR</h6>
+                            <p id="max-temp"></p>
+                        </div>
+
+                        <div class="data-4">
+                            <h6>MIN TEMPERATUR</h6>
+                            <p id="min-temp"></p>
+                        </div>
                     </div>
+
+                    <hr>
+
+                    <h6>MÅNAR</h6>
+                    <p id="moons"></p>
                 </div>
-                
+            </div>
             </div>
         </section>
     </main>

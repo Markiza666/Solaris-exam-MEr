@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Secular+One&display=swap");
 *, html {
   margin: 0;
   padding: 0;
@@ -19,22 +18,27 @@ h4 {
 }
 
 body {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   background-image: url(asset/universum.jpg);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
 }
 body .sun {
   position: absolute;
   min-height: 90vh;
+  cursor: pointer;
 }
 body header {
   margin: 4.5rem 4.25rem 0px auto;
   width: 625px;
 }
+body header h1, body header h4 {
+  text-align: end;
+}
 body .planets {
-  width: 1200px;
+  max-width: 80%;
   height: 60vh;
   margin: auto;
   display: flex;
@@ -43,30 +47,39 @@ body .planets {
 }
 body .planets .merkury {
   width: 0.5rem;
+  cursor: pointer;
 }
 body .planets .venus {
   width: 0.8rem;
+  cursor: pointer;
 }
 body .planets .earth {
   width: 1.5rem;
+  cursor: pointer;
 }
 body .planets .mars {
   width: 0.6rem;
+  cursor: pointer;
 }
 body .planets .jupiter {
   width: 8rem;
+  cursor: pointer;
 }
 body .planets .saturn {
   width: 17rem;
+  cursor: pointer;
 }
 body .planets .uran {
   width: 3rem;
+  cursor: pointer;
 }
 body .planets .neptun {
   width: 4.5rem;
   padding-left: 2rem;
+  cursor: pointer;
 }
 body .modal {
+  visibility: hidden;
   background-color: rgb(0, 0, 0);
   background-color: rgba(1, 1, 1, 0.9);
   display: block;
@@ -89,6 +102,7 @@ body .modal .modal-content #close {
   float: right;
   font-size: 2.5rem;
   font-weight: bold;
+  cursor: pointer;
 }
 body .modal .modal-content h6 {
   padding-top: 1rem;

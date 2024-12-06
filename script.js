@@ -1,5 +1,5 @@
 // Globala konstanter för att komma åt HTML DOM(document object model) objekt
-const sun = document.getElementById('sun');
+const starPlanet = document.getElementById('starPlanet');
 const merkurius = document.getElementById('merkurius');
 const venus = document.getElementById('venus');
 const earth = document.getElementById('earth');
@@ -56,8 +56,8 @@ let saveInfoToLocal = (data) => {
 
 // Funktion för att öppna modal/popup och presentera informationen
 let presentInfo = (dataToPresent) => {
-    const sun2 = document.getElementById('sun2');
-    const sun3 = document.getElementById('sun3');
+    const starPlanet2 = document.getElementById('starPlanet-eff2');
+    const starPlanet3 = document.getElementById('starPlanet-eff3');
 
     const closeBtn = document.getElementById('close');
     const planetName = document.getElementById('planet-name');
@@ -73,18 +73,18 @@ let presentInfo = (dataToPresent) => {
     popup.style.display = 'block';
     header.style.visibility = 'hidden';
     planets.style.visibility = 'hidden';
-    sun.style.backgroundColor = 'rgba(66, 142, 212, 1)';
-    sun2.style.display = 'block';
-    sun3.style.display = 'block';
+    starPlanet.style.backgroundColor = 'rgba(66, 142, 212, 1)';
+    starPlanet2.style.display = 'block';
+    starPlanet3.style.display = 'block';
 
     closeBtn.addEventListener('click', 
         function() {
             popup.style.display = 'none';
             header.style.visibility = 'visible';
             planets.style.visibility = 'visible';
-            sun.style.backgroundColor = 'rgba(255, 208, 41, 1)';
-            sun2.style.display = 'none';
-            sun3.style.display = 'none';
+            starPlanet.style.backgroundColor = 'rgba(255, 208, 41, 1)';
+            starPlanet2.style.display = 'none';
+            starPlanet3.style.display = 'none';
         });
 
     planetName.innerHTML = dataToPresent.name;
@@ -113,7 +113,7 @@ let presentInfo = (dataToPresent) => {
 getKey();
 
 // Lägger på lyssnare för att kunna klicka på solsystemets delar och få fram information
-sun.addEventListener ('click', () => {presentInfo(systemData[0])});
+starPlanet.addEventListener ('click', () => {presentInfo(systemData[0])});
 merkurius.addEventListener('click', () => {presentInfo(systemData[1])});
 venus.addEventListener('click', () => {presentInfo(systemData[2])});
 earth.addEventListener('click', () => {presentInfo(systemData[3])});

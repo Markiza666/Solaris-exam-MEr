@@ -86,7 +86,6 @@ body {
         left: 0;
         width: 65%;
         height: 120%;
-        background-color: rgba(255, 208, 41, 1);
         border-radius: 50%;
         transform: translate(-85%, -50%);
         z-index: 4;
@@ -100,7 +99,6 @@ body {
         left: 0;
         width: 73%;
         height: 130%;
-        background-color: rgba(66, 142, 212, 0.5);
         border-radius: 50%;
         transform: translate(-81%, -50%);
         z-index: 3;
@@ -113,7 +111,6 @@ body {
         left: 0;
         width: 85%;
         height: 145%;
-        background-color: rgba(66, 142, 212, 0.2);
         border-radius: 50%;
         transform: translate(-79%, -50%);
         z-index: 2;
@@ -148,32 +145,26 @@ body {
 
             .merkury {
                 width: .8%;
-                background-color: rgba(136, 136, 136, 1);
             }
 
             .venus {
                 width: 1.9%;
-                background-color: rgba(231, 205, 205, 1);
             }
 
             .earth {
                 width: 2%;
-                background-color: rgba(66, 142, 212, 1);
             }
 
             .mars {
                 width: 1.1%;
-                background-color: rgba(239, 95, 95, 1);
             }
 
             .jupiter {
                 width: 14%;
-                background-color: rgba(226, 148, 104, 1);
             }
 
             .saturn {
                 width: 11%;
-                background-color: rgba(199, 170, 114, 1);
                 cursor: pointer;
                 position: relative;
                 overflow: visible;
@@ -181,7 +172,8 @@ body {
                 .saturn-rings {
                     width: 230px;
                     height: 6px;
-                    background-color: rgba(255, 255, 255, 0.4);
+                    background-color: rgb(255, 255, 255);
+                    opacity: 0.4;
                     border-radius: 50%;
                     position: absolute;
                     //  Placera ringen i mitten och rotera
@@ -193,18 +185,16 @@ body {
 
             .uran {
                 width: 4.6%;
-                background-color: rgba(201, 212, 241, 1);
     
             }
 
             .neptun {
                 width: 4.6%;
-                background-color: rgba(122, 145, 167, 1);
             }
         }
 
         .modal {
-            background: url(asset/universum.jpg) rgba(12, 22, 77, 0.8);
+            background: url(../universum.jpg) rgba(12, 22, 77, 0.9);
             background-size: cover;
             background-blend-mode: lighten;
             display: none;

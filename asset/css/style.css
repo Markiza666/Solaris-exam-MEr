@@ -98,7 +98,6 @@ body .sun {
   left: 0;
   width: 65%;
   height: 120%;
-  background-color: rgb(255, 208, 41);
   border-radius: 50%;
   transform: translate(-85%, -50%);
   z-index: 4;
@@ -111,7 +110,6 @@ body .sun2 {
   left: 0;
   width: 73%;
   height: 130%;
-  background-color: rgba(66, 142, 212, 0.5);
   border-radius: 50%;
   transform: translate(-81%, -50%);
   z-index: 3;
@@ -123,7 +121,6 @@ body .sun3 {
   left: 0;
   width: 85%;
   height: 145%;
-  background-color: rgba(66, 142, 212, 0.2);
   border-radius: 50%;
   transform: translate(-79%, -50%);
   z-index: 2;
@@ -155,27 +152,21 @@ body main .planets {
 }
 body main .planets .merkury {
   width: 0.8%;
-  background-color: rgb(136, 136, 136);
 }
 body main .planets .venus {
   width: 1.9%;
-  background-color: rgb(231, 205, 205);
 }
 body main .planets .earth {
   width: 2%;
-  background-color: rgb(66, 142, 212);
 }
 body main .planets .mars {
   width: 1.1%;
-  background-color: rgb(239, 95, 95);
 }
 body main .planets .jupiter {
   width: 14%;
-  background-color: rgb(226, 148, 104);
 }
 body main .planets .saturn {
   width: 11%;
-  background-color: rgb(199, 170, 114);
   cursor: pointer;
   position: relative;
   overflow: visible;
@@ -183,7 +174,8 @@ body main .planets .saturn {
 body main .planets .saturn .saturn-rings {
   width: 230px;
   height: 6px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgb(255, 255, 255);
+  opacity: 0.4;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -192,14 +184,12 @@ body main .planets .saturn .saturn-rings {
 }
 body main .planets .uran {
   width: 4.6%;
-  background-color: rgb(201, 212, 241);
 }
 body main .planets .neptun {
   width: 4.6%;
-  background-color: rgb(122, 145, 167);
 }
 body main .modal {
-  background: url(asset/universum.jpg) rgba(12, 22, 77, 0.8);
+  background: url(../universum.jpg) rgba(12, 22, 77, 0.9);
   background-size: cover;
   background-blend-mode: lighten;
   display: none;

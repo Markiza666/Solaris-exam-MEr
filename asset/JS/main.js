@@ -40,38 +40,34 @@ neptune.style.backgroundColor = planetColors.neptune;
 const popup = document.getElementById('popup');
 
 const showModal = (color) => {
-    starPlanet.removeEventListener ('click', () => {
-        presentInfo(systemData[0], planetColors.sun)
-});
-const starPlanet2 = document.getElementById('starPlanet-eff2');
-const starPlanet3 = document.getElementById('starPlanet-eff3');
+    starPlanet.removeEventListener ('click',showSunInfo);
+    const starPlanet2 = document.getElementById('starPlanet-eff2');
+    const starPlanet3 = document.getElementById('starPlanet-eff3');
 
-popup.style.display = 'block';
-header.style.visibility = 'hidden';
-planets.style.visibility = 'hidden';
-starPlanet.style.backgroundColor = color;
-starPlanet2.style.display = 'block';
-starPlanet2.style.backgroundColor = color;
-starPlanet2.style.opacity ='0.35';
-starPlanet3.style.display = 'block';
-starPlanet3.style.backgroundColor = color;
-starPlanet3.style.opacity ='0.25';
+    popup.style.display = 'block';
+    header.style.visibility = 'hidden';
+    planets.style.visibility = 'hidden';
+    starPlanet.style.backgroundColor = color;
+    starPlanet2.style.display = 'block';
+    starPlanet2.style.backgroundColor = color;
+    starPlanet2.style.opacity ='0.35';
+    starPlanet3.style.display = 'block';
+    starPlanet3.style.backgroundColor = color;
+    starPlanet3.style.opacity ='0.25';
 
-const closeBtn = document.getElementById('close');
+    const closeBtn = document.getElementById('close');
 
-closeBtn.addEventListener('click', 
-    function() {
-        popup.style.display = 'none';
-        header.style.visibility = 'visible';
-        planets.style.visibility = 'visible';
-        starPlanet.style.backgroundColor = '' + planetColors.sun;
-        starPlanet2.style.display = 'none';
-        starPlanet3.style.display = 'none';
-        starPlanet.addEventListener ('click', () => {
-            presentInfo(systemData[0], planetColors.sun)
-        });
-    });
-
+    closeBtn.addEventListener('click', 
+        function() {
+            popup.style.display = 'none';
+            header.style.visibility = 'visible';
+            planets.style.visibility = 'visible';
+            starPlanet.style.backgroundColor = '' + planetColors.sun;
+            starPlanet2.style.display = 'none';
+            starPlanet3.style.display = 'none';
+            starPlanet.addEventListener ('click', showSunInfo);
+        }
+    );
 }
 
 const showDetails = (details) => {
@@ -164,12 +160,13 @@ systemData = data.bodies;   // Sparar all DATA i en array, dvs blir en array med
 
 getKeyAndSolarSystemData();
 
- 
+const showSunInfo = () => {
+    presentInfo(systemData[0], planetColors.sun)
+    
+}
    
 // Lägger på lyssnare för att kunna klicka på solsystemets delar och få fram information
-starPlanet.addEventListener ('click', () => {
-    presentInfo(systemData[0], planetColors.sun)
-});
+starPlanet.addEventListener ('click',showSunInfo);
 merkurius.addEventListener('click', () => {
     presentInfo(systemData[1], planetColors.mercury)}
 );

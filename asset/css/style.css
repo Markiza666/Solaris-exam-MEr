@@ -7,13 +7,13 @@
 
 h1 {
   padding-top: 1.5rem;
-  font: normal 1.5rem Secular one;
+  font: normal 2rem Secular one;
   color: white;
   letter-spacing: 0.25rem;
 }
 @media screen and (min-width: 425px) {
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -23,13 +23,13 @@ h1 {
 }
 
 h4 {
-  font: normal 0.75rem Lora;
+  font: normal 1.1rem Lora;
   color: rgb(255, 208, 41);
   letter-spacing: 0.5rem;
 }
 @media screen and (min-width: 420px) {
   h4 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -46,19 +46,19 @@ h4 {
 }
 @media screen and (min-width: 425px) {
   .h6 {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 @media screen and (min-width: 768px) {
   .h6 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 .p {
   padding-top: 0.5rem;
   color: white;
-  font: normal 0.6rem Roboto Condensed;
+  font: normal 0.65rem Roboto Condensed;
   letter-spacing: 1.5px;
 }
 @media screen and (min-width: 425px) {

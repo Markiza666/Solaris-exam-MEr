@@ -7,11 +7,11 @@
 
 h1 {
     padding-top: 1.5rem;
-    font: normal 1.5rem Secular one;
+    font: normal 2rem Secular one;
     color: white;
     letter-spacing: .25rem;
     @media screen and (min-width: 425px) {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     @media screen and (min-width: 768px) {
@@ -20,11 +20,11 @@ h1 {
 }
 
 h4 {
-    font: normal .75rem Lora;
+    font: normal 1.1rem Lora;
     color: rgba(255, 208, 41, 1);
     letter-spacing: .5rem;
     @media screen and (min-width: 420px) {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     @media screen and (min-width: 768px) {
@@ -38,18 +38,18 @@ h4 {
     letter-spacing: .1rem;
     color: white;
     @media screen and (min-width: 425px) {
-        font-size: .8rem;
+        font-size: .7rem;
     }
 
     @media screen and (min-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 
 .p {
     padding-top: .5rem;
     color: white;
-    font: normal .6rem Roboto Condensed;
+    font: normal .65rem Roboto Condensed;
     letter-spacing: 1.5px;
     @media screen and (min-width: 425px) {
         font-size: .8rem;

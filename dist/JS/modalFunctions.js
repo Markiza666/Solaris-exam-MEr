@@ -5,7 +5,7 @@
 
 //Importerar variabler/pekare som behövs
 import { systemData } from './apiRequests.js';
-import { domObjects, modalElements } from './domElements.js';
+import { domObjects, modalElements } from './domElements.js'; 
 import { planetColors } from './variables.js';
 
 // Öppnar modalen för att visa information om klickad himlakropp med korrekt färg till vänster

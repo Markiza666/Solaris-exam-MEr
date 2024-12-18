@@ -6,7 +6,7 @@ import { planetColors } from './variables.js';
 
 // Kör funktion för att hämta data genom API
 getKeyAndSolarSystemData();
-
+ 
 
 // Funktion för att lägga alla händelselyssnare på solen och planeterna
 const initiatePage = () => {

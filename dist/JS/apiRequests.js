@@ -16,7 +16,7 @@ const getKeyAndSolarSystemData = () => {
     const keyEndpoint = '/keys';
 
     const keyOptions = {
-        method: 'POST' 
+        method: 'POST'  
     }
 
     // Fetch är en async function som har await i .then och .catch. Detta är det kortaste sättet att skriva som ändå fångar fel som kan uppstå. Att använda try/catch är till för att fånga fel i synkrona funktioner. Här i async funktion fångas felet med .catch

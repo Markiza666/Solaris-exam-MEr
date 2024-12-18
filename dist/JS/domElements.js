@@ -2,7 +2,7 @@
 // Modul med pekarna för att kunna förändra HTML DOM objekten
 // Har delat alla pekare i en modul för att de inte ska finnas på flera ställen i koden
 // **************************************************
-
+ 
 
 // Objekt/array med pekare till alla element på den grundläggande sidan
 const domObjects = {
